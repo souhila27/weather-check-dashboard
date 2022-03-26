@@ -1,0 +1,39 @@
+body {
+    margin: 5px;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    margin-top: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.search-panel {
+    width: 25%;
+    margin: 10px 20px 0 10px;
+    padding: 10px 0 10px 10px;
+    
+}
+.list-group-item:first-child {
+    color: white;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    background-color: green;
+}
+
+.search-button-panel {
+    margin-left: -52px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    margin-left: 58.5px;
+}
