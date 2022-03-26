@@ -15,7 +15,7 @@
     </header>
 
     <main>
-        <section class="search-panel">
+        <section class="search-container">
             <div class="search-box">
                 <h3>Search for a City:</h3>
                 <form>
@@ -33,6 +33,29 @@
                     </div>
                 </form>
             </div>
+        </section>
+        <!-- adding results container section -->
+        <section class="results-container">
+            <div class="current-conditions-panel">
+                <div class="name-block">
+                    <h3 id="city-name"></h3>
+                    <img src="" alt="" id="currentIcon">
+                </div>
+                <div>
+                    <p class="current-info" id="temperature"></p>
+                </div>
+                <div>
+                    <p class="current-info" id="humidity"></p>
+                </div>
+                <div>
+                    <p class="current-info" id="wind-speed"></p>
+                </div>
+                <div class="uv-index-block">
+                    <p>UV Index: </p>
+                    <p class="rounded current-info" id="uv-index"></p>
+                </div>
+            </div>
+
         </section>
 
        
