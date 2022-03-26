@@ -70,3 +70,60 @@ section {
     margin-left: 5px;
     padding: 5px 10px;
 }
+.forecast-container {
+    padding-top: 50px;
+}
+
+.container {
+    display: inline;
+}
+
+.card-header,
+.card-body {
+    text-align: center;
+}
+
+.card-header {
+    background-color: blue;
+    color: white;
+}
+
+.card-body {
+    background-color: lightblue;
+}
+
+@media screen and (max-width: 575px) {
+    .search-container {
+        width: 40%;
+    }
+
+    .search-button-panel {
+        margin-left: 0px;
+    }
+
+    .search-container h3 {
+        font-size: 15px;
+    }
+
+    .form-row {
+        display: block;
+        text-align: center;
+    }
+
+    .results-container {
+        width: 60%;
+    }
+    .btn-primary {
+        margin-top: 3px;
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+        margin-left: 10.5px;
+    }
+    .form-control{
+        width:auto;
+    }
+};
+
+
+
