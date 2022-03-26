@@ -35,6 +35,7 @@ function searchCity() {
         } else {
             alert("Cannot find city!");
         }
+        console.log 
     })
 
 
