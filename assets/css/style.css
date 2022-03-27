@@ -27,6 +27,14 @@ section {
     border-top-right-radius: 0.25rem;
     background-color: salmon;
 }
+city-name {
+    background-color: salmon;
+    width: 89%;
+}
+.list-group-item-light {
+    color:white ;
+}
+
 
 .search-button-panel {
     margin-left: -52px;
@@ -50,6 +58,7 @@ section {
 
 .city-name {
     width: 89%;
+    background-color: salmon;
 }
 
 
@@ -128,6 +137,21 @@ section {
         width:auto;
     }
 };
+.favorable {
+    background-color: green;
+    color: white;
+}
+
+.moderate {
+    background-color: yellow;
+    color: black;
+}
+
+.severe {
+    background-color: red;
+    color: white;
+}
+
 
 
 
