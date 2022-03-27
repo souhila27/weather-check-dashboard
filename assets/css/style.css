@@ -25,7 +25,7 @@ section {
     color: white;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
-    background-color: green;
+    background-color: salmon;
 }
 
 .search-button-panel {
@@ -58,6 +58,8 @@ section {
     border-right: none;
     padding-left: 10px;
     padding-bottom: 30px;
+    background-color: salmon;
+
 }
 
 .name-block,
@@ -84,12 +86,14 @@ section {
 }
 
 .card-header {
-    background-color: blue;
-    color: white;
+    background-color: salmon;
+    color: black;
 }
 
 .card-body {
-    background-color: lightblue;
+    
+ background-color: gray;
+
 }
 
 @media screen and (max-width: 575px) {
