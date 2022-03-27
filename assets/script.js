@@ -76,7 +76,27 @@ function getFutureWeather(data) {
        $(currentSelector)[0].textContent = "Humidity: " + futureWeather.humidity + "%";
    }
 }
+function titleCase(city) {
+   var updatedCity = city.toLowerCase().split(" ");
+   var returnedCity = "";
+   for (var i = 0; i < updatedCity.length; i++) {
+       updatedCity[i] = updatedCity[i][0].toUpperCase() + updatedCity[i].slice(1);
+       returnedCity += " " + updatedCity[i];
+   }
+   return returnedCity;
+}
+function convertUnixTime(data, index) {
+   const dateObject = new Date(data.daily[index + 1].dt * 1000);
 
+   return (dateObject.toLocaleDateString());
+}
+$("#search-button").on("click", function (e) {
+   e.preventDefault();
+
+   searchForCity();
+
+   $("form")[0].reset();
+})
 
 
 
