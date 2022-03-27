@@ -98,6 +98,31 @@ $("#search-button").on("click", function (e) {
    $("form")[0].reset();
 })
 
+$(".city-list-box").on("click", ".city-name", function () {
+
+   var coordinates = (localStorage.getItem($(this)[0].textContent)).split(" ");
+   coordinates[0] = parseFloat(coordinates[0]);
+   coordinates[1] = parseFloat(coordinates[1]);
+
+   $("#city-name")[0].textContent = $(this)[0].textContent + " (" + moment().format('M/D/YYYY') + ")";
+
+   getListCity(coordinates);
+})
+function getListCity(coordinates) {
+   apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=" + coordinates[0] + "&lon=" + coordinates[1] + "&exclude=minutely,hourly&units=imperial&appid=e4a82bdd4dbf9419e8bbfeb9328d65d1";
+
+   fetch(apiURL).then(function (response) {
+       if (response.ok) {
+           response.json().then(function (data) {
+               getCurrentWeather(data);
+           })
+       }
+   })
+};
+
+localStorage.clear();
+
+
 
 
 
